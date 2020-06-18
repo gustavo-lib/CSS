@@ -1,0 +1,44 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 2.5fr 0.5fr;
+  gap: 1px 1px;
+  grid-template-areas: "menu""center""footer";
+}
+
+.center {
+  display: grid;
+  grid-template-columns: 0.5fr 3.5fr 0.5fr;
+  grid-template-rows: 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "left content rigth";
+  grid-area: center;
+
+}
+
+.left {
+  grid-area: left;
+}
+
+.content {
+  grid-area: content;
+  background-color: chartreuse;
+  height: 100%;
+}
+
+.rigth {
+  grid-area: rigth;
+}
+
+.menu {
+  grid-area: menu;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: crimson;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
